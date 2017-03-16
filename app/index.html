@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://use.fontawesome.com/3703b6b40b.js"></script>
   </head>
-  <body>
+  <body ng-app="app">
 
 <!----navigation panel---------------------------------->
     <nav class="nav">
@@ -30,6 +30,32 @@
 
 
     <div class="container">
+      <div ng-controller="UserController">
+         <h4></h4>
+         <form ng-submit="addUser(user)">
+           <p class="control">
+             <input type="text" placeholder="Username"
+                    ng-model="user.username" />
+           </p>
+
+           <p class="control">
+             <input type="text" placeholder="Email"
+                    ng-model="user.email" />
+           </p>
+           <p class="control">
+             <input type="text" placeholder="Password"
+                    ng-model="user.password" />
+           </p>
+           <p class="control">
+             <input type="text" placeholder="Add a Profile Picture"
+                    ng-model="user.profile_url" />
+           </p>
+           <p class="control">
+             <button class="button is-primary">Create account!</button>
+           </p>
+         </form>
+       </div>
+
     </div>
     <script src="js/bundle.js"></script>
   </body>
