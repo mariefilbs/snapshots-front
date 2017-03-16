@@ -7,12 +7,14 @@
      <div ng-repeat="msg in notifications" class="notification is-primary">
       <button ng-click="removeMsg(msg)"
             class="delete"></button>
+            <p class="content">
             {{ msg }}
+            </p>
      </div>
      <!--------------------------------->
 
          <h4>Register:</h4>
-         <form ng-submit="addUser(user)">
+         <form ng-submit="register(user)">
            <p class="control">
              <input type="text" placeholder="Username"
                     ng-model="user.username" />
@@ -39,7 +41,7 @@
      <div class="column">
        <h4>Login</h4>
 
-       <form ng-submit="signIn(login)">
+       <form ng-submit="login(login)">
 
         <p class="control">
           <input type="text" placeholder="Email"
