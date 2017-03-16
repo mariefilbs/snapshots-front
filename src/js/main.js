@@ -6,7 +6,7 @@ import SERVER from './server';
 import UserController from './controllers/User';
 
 angular
-   .module('app', ['ui.router', 'ng-cookies'])
+   .module('app', ['ui.router', 'ngCookies'])
    .config(Config)
    .constant('SERVER', SERVER)
    .controller('UserController', UserController);
