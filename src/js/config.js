@@ -1,15 +1,16 @@
 function Config ($stateProvider, $urlRouterProvider) {
 
   $stateProvider
-  // .state('home', {
-  //    url: '/home',
-  //    templateUrl: 'templates/photos-list.tpl.html',
-  //    controller: 'PhotoController'
-  //  })
+  .state('home', {
+    url: '/home',
+    template: `<h1>Welcome to SnapShots! Excuse the construction on our site!<h1>`
+    //templateUrl: 'templates/layout.tpl.html',
+    //controller: 'PhotoController'
+  })
    .state('login', {
-       url: '/users',
-       templateURL: 'templates/login.tpl.html',
-       controller: 'UserController'
+     url: '/users',
+     templateUrl: 'templates/login.tpl.html',
+     controller: 'UserController'
    })
    .state('page-not-found', {
      url: '/not-found',
@@ -18,7 +19,7 @@ function Config ($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.when('', '/home');
   $urlRouterProvider.otherwise('/not-found');
-};
+}
 
 Config.$inject = ['$stateProvider', '$urlRouterProvider'];
 

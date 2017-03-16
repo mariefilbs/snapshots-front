@@ -1,3 +1,5 @@
+const SERVER = "https://intense-woodland-38140.herokuapp.com/";
+
 function UserController ($scope, $http, SERVER) {
   $scope.notifications = [];
 
