@@ -1,5 +1,10 @@
 @import 'bulma';
 
+.container {
+    width: 500px;
+    margin: 25px auto;
+}
+
 nav {
   border-bottom: 1px solid black;
 }
@@ -9,4 +14,14 @@ nav {
 
 i.fa {
   padding-top: 20px;
+}
+
+.create-button {
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+.signin-button {
+  margin-left: 50px;
+  margin-top: 10px;
 }
