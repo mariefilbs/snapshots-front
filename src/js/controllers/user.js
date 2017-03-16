@@ -9,6 +9,7 @@ function UserController ($scope, $http, SERVER) {
   }
 
   $scope.register = (user) => {
+    console.log(user)
     $http.post(`${SERVER}/register`, user).then(resp => {
       var message = `Created new user: ${resp.data.username}`;
       $scope.notifications.push(message);
