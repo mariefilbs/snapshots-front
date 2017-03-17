@@ -8,9 +8,9 @@ function Config ($stateProvider, $urlRouterProvider) {
   })
   .state('root.home',  {
     url: '/home',
-    template: `<h1>Welcome to SnapShots! Excuse the construction on our site!<h1>`,
-    //templateUrl: 'templates/layout.tpl.html',
-    controller: 'UserController'
+    //template: `<p>Welcome to SnapShots! Please excuse our site construction.</p>`
+    templateUrl: 'templates/list-photo.tpl.html',
+    controller: 'PhotoController'
   })
    .state('root.login', {
      url: '/users',
@@ -21,6 +21,10 @@ function Config ($stateProvider, $urlRouterProvider) {
      url: '/photos',
      templateUrl: 'templates/add-photo.tpl.html',
      controller: 'PhotoController'
+   })
+   .state('root.developers', {
+     url: '/developers',
+     templateUrl: 'templates/developers.tpl.html',
    })
    .state('page-not-found', {
      url: '/not-found',

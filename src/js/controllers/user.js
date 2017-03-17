@@ -8,13 +8,13 @@ function UserController ($scope, $http, SERVER, $cookies, $state) {
   }
 
   $scope.register = (user) => {
-    $http.post(`${SERVER}/register`, user).then(resp => {
+    $http.post(`${SERVER}/users`, user).then(resp => {
       var message = `Created new user: ${resp.data.username}`;
       $scope.notifications.push(message);
     }).catch(error => {
       console.log(error);
     });
-  }
+  };
 
   $scope.login = (user) => {
     console.log(user)
