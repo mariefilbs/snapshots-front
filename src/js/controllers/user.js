@@ -20,7 +20,7 @@ function UserController ($scope, $http, SERVER, $cookies, $state) {
     console.log(user)
     $http.post(`${SERVER}/login`, user).then(resp => {
       $cookies.put('access-token', resp.data.token);
-      $state.go('/home');
+      $state.go('root.home');
     }).catch(error => {
        console.log(error);
     });

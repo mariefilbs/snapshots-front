@@ -1,0 +1,23 @@
+<div class="container">
+ <div ng-controller="PhotoController">
+   <h4>Upload a photo!</h4>
+    <form ng-submit="addPhoto(photo)">
+      <p class="control">
+        <input type="text" placeholder="Photo Title"
+           ng-model="photo.title" />
+      </p>
+
+      <p class="control">
+        <input type="text" placeholder="Photo Caption"
+           ng-model="photo.caption" />
+      </p>
+      <p class="control">
+        <input type="text" placeholder="Photo URL"
+           ng-model="photo.photo_url" />
+      </p>
+      <p class="control">
+        <button class="button is-primary">Upload!</button>
+      </p>
+   </form>
+  </div>
+</div>
