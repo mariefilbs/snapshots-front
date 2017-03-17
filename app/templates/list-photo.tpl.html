@@ -1,25 +1,23 @@
-<div class="container columns">
-<div ng-controller='PhotoController'>
-<div ng-repeat='photo in photos'>
-<div class="card column">
-  <div class="card-image">
-    <figure class="image is-4x3">
-      <img src="{{ photo.photo_url }}" alt="Image">
-    </figure>
-  </div>
-  <div class="card-content">
-    <div class="media">
-      <div class="media-content">
-        <p class="title is-4">{{ photo.title }}</p>
+<div class="main-container">
+<div class="columns is-multiline">
+  <div class="column" ng-repeat='photo in photos'>
+    <div class="card">
+      <div class="card-image is">
+        <figure class="image is-4by3">
+          <img src="{{ photo.photo_url }}" alt="Image">
+        </figure>
       </div>
-    </div>
-
-    <div class="content">
+      <div class="media">
+       <div class="media-content">
+        <p class="title is-4">{{ photo.title }}</p>
+       </div>
+      </div>
+     <div class="content">
       <!---where comments will go--->
       <br>
-      <small>{{ photo.createdAt }}</small>
-    </div>
+      <small>{{ user.username }}</small>
+     </div>
   </div>
-</div>
+ </div>
 </div>
 </div>
