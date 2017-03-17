@@ -9,28 +9,7 @@
     <script src="https://use.fontawesome.com/3703b6b40b.js"></script>
   </head>
   <body ng-app="app">
-    <div class="container2">
-
-<!----navigation panel---------------------------------->
-    <nav class="nav">
-       <div class="nav-left">
-        <a class="nav-item logo">SnapShots</a>
-        <i class="fa fa-camera-retro" aria-hidden="true"></i>
-      </div>
-
-  <!--Take away 'is active' if we want hidden on mobile -->
-      <div class="nav-right nav-menu is active">
-        <a href="#!/home" class="nav-item">Home</a>
-        <a href="#!/users" class="nav-item">Sign Up/Login</a>
-        <a class="nav-item">Upload Photo</a>
-        <i class="fa fa-github" aria-hidden="true"></i>
-        <a class="nav-item">About Developers</a>
-      </div>
-    </nav>
-<!------end nav panel------------------------------------->
-
-    </div>
-    <div class="main-content" ui-view></div>
+    <div class="container2" ui-view></div>
     <script src="js/bundle.js"></script>
   </body>
 </html>
