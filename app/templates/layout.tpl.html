@@ -8,7 +8,8 @@
   <!--Take away 'is active' if we want hidden on mobile -->
       <div class="nav-right nav-menu is active">
         <a href="#!/home" class="nav-item">Home</a>
-        <a href="#!/users" class="nav-item">Sign Up/Login</a>
+        <a href="#!/users" class="nav-item" ng-hide="loggedIn">Sign Up/Login</a>
+        <a class="nav-item" ng-show="loggedIn" ng-click="signOut()">Sign Out</a>
         <a href="#!/photos" class="nav-item">Upload Photo</a>
         <i class="fa fa-github" aria-hidden="true"></i>
         <a href="#!/developers" class="nav-item">About Developers</a>

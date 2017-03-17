@@ -1,6 +1,7 @@
 import angular from 'angular';
 import 'angular-ui-router';
 import 'angular-cookies';
+import setup from './setup';
 
 import Config from './config';
 import SERVER from './server';
@@ -12,6 +13,7 @@ import PhotoController from './controllers/photo';
 angular
    .module('app', ['ui.router', 'ngCookies'])
    .config(Config)
+   .run(setup)
    .constant('SERVER', SERVER)
 
    .controller('UserController', UserController)

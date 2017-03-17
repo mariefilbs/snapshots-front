@@ -1,4 +1,4 @@
-function UserController ($scope, $http, SERVER, $cookies, $state) {
+function UserController ($scope, $http, SERVER, $cookies, $state, $rootScope) {
   $scope.notifications = [];
   console.log($cookies);
 
@@ -19,6 +19,7 @@ function UserController ($scope, $http, SERVER, $cookies, $state) {
   $scope.login = (user) => {
     console.log(user)
     $http.post(`${SERVER}/login`, user).then(resp => {
+      $rootScope.loggedIn = true;
       $cookies.put('access-token', resp.data.token);
       $state.go('root.home');
     }).catch(error => {
@@ -26,6 +27,6 @@ function UserController ($scope, $http, SERVER, $cookies, $state) {
     });
   }
 }
-UserController.$inject = ['$scope', '$http', 'SERVER', '$cookies', '$state'];
+UserController.$inject = ['$scope', '$http', 'SERVER', '$cookies', '$state', '$rootScope'];
 
 export default UserController;
