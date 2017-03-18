@@ -26,10 +26,11 @@ function Config ($stateProvider, $urlRouterProvider) {
      url: '/developers',
      templateUrl: 'templates/developers.tpl.html',
    })
-   .state('root.select-photo', {
-     url: '/photos/:id',
-     templateUrl: 'templates/select-photo.tpl.html'
-   })
+  //  .state('root.home.select-photo', {
+  //    url: '/photos/{{ photo.id }}',
+  //    templateUrl: 'templates/select-photo.tpl.html',
+  //    controller: 'PhotoController'
+  //  })
    .state('page-not-found', {
      url: '/not-found',
      template: `<h2>So sorry! Unable to find that URL.</h2>`

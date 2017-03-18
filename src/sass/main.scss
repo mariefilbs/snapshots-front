@@ -1,4 +1,9 @@
 @import 'bulma';
+//heart
+$button-activeIcon: #FF735C;
+.activeIcon {
+  background: $button-activeIcon;
+}
 
 .container {
     width: 1000px;
@@ -35,4 +40,21 @@ i.fa {
 .main-container {
   margin: 20px;
 
+}
+
+.mouse-over {
+  position: absolute;
+  z-index: 2;
+  margin-top: 205px;
+  margin-left: 265px;
+  visibility: hidden;
+ }
+
+.card:hover .mouse-over {
+  visibility: visible;
+}
+
+i.fa.fa-heart-o {
+  height: 20px;
+  width: 20px;
 }

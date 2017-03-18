@@ -1,8 +1,14 @@
 <div class="main-container">
-<a href="#!/photos">
 <div class="columns is-multiline">
-  <div class="column" ng-repeat='photo in photos'>
+  <div class="column is-one-quarter" ng-repeat='photo in photos'>
     <div class="card">
+      <a href="#!/photos/{{ photo.id }}">
+      <div class="mouse-over">
+          <span><i class="fa fa-heart-o" aria-hidden="true" ng-click="activateHeart()" ng-class="{'activeIcon': isActive}"></i></span>
+          <!-- <span><img class="heart" src="/images/heart.png" ng-click="activateHeart()" ng-class="{'activeIcon': isActive}"><span> -->
+        </div>
+
+      <!--<a href="/#!/photos/{{ photo.id }}">-->
       <div class="card-image is">
         <figure class="image is-4by3">
           <img src="{{ photo.photo_url }}" alt="Image">
@@ -18,8 +24,8 @@
       <br>
       <small>{{ user.username }}</small>
      </div>
+     </a>
     </div>
    </div>
   </div>
- </a>
 </div>
