@@ -17,11 +17,29 @@ nav {
 .logo {
   font-size: 150%;
   letter-spacing: 2px;
+  //font-family: 'Lobster', cursive;
 }
 
 i.fa {
   padding-top: 20px;
 }
+
+.register {
+  padding-left: 300px;
+}
+
+.register input {
+  margin: 5px;
+}
+
+.login {
+  padding-right: 300px;
+}
+
+.login input {
+  margin: 5px;
+}
+
 
 .create-button {
   margin-left: 12px;

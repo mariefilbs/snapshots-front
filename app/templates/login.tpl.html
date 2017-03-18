@@ -2,16 +2,7 @@
     <div class="container">
       <div ng-controller="UserController">
         <div class="columns">
-        <div class="column">
-     <!---new user notification--------->
-     <div ng-repeat="msg in notifications" class="notification is-primary">
-      <button ng-click="removeMsg(msg)"
-            class="delete"></button>
-            <p class="content">
-            {{ msg }}
-            </p>
-     </div>
-     <!--------------------------------->
+        <div class="column register">
 
          <h4>Register:</h4>
          <form ng-submit="register(user)">
@@ -36,10 +27,19 @@
              <button class="button is-primary create-button">Create account!</button>
            </p>
          </form>
+         <!---new user notification--------->
+         <div ng-repeat="msg in notifications" class="notification is-primary">
+          <button ng-click="removeMsg(msg)"
+                class="delete"></button>
+                <p class="content">
+                {{ msg }}
+                </p>
+         </div>
+         <!--------------------------------->
         </div>
 
-     <div class="column">
-       <h4>Login</h4>
+     <div class="column login">
+       <h4>Login:</h4>
 
        <form ng-submit="login(signin)">
 
