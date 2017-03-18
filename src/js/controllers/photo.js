@@ -1,5 +1,4 @@
 function PhotoController ($scope, $http, $state, SERVER) {
-  $scope.active = 'is-active';
   $scope.isActive = false;
   $scope.photos = [];
 

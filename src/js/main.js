@@ -9,6 +9,7 @@ import SERVER from './server';
 import UserController from './controllers/user';
 import LayoutController from './controllers/layout';
 import PhotoController from './controllers/photo';
+import SelectPhotoController from './controllers/selectphoto';
 
 angular
    .module('app', ['ui.router', 'ngCookies'])
@@ -18,4 +19,5 @@ angular
 
    .controller('UserController', UserController)
    .controller('LayoutController', LayoutController)
-   .controller('PhotoController', PhotoController);
+   .controller('PhotoController', PhotoController)
+   .controller('SelectPhotoController', SelectPhotoController);

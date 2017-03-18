@@ -2,7 +2,7 @@
 //heart
 $button-activeIcon: #FF735C;
 .activeIcon {
-  background: $button-activeIcon;
+  color: $button-activeIcon;
 }
 
 .container {
@@ -39,7 +39,6 @@ i.fa {
 
 .main-container {
   margin: 20px;
-
 }
 
 .mouse-over {
@@ -57,4 +56,27 @@ i.fa {
 i.fa.fa-heart-o {
   height: 20px;
   width: 20px;
+}
+
+.add-pic {
+  padding-left: 400px;
+  height: 400px;
+}
+
+.main-content {
+  flex: 1;
+}
+
+footer {
+  height: 220px;
+}
+
+.footer-list li {
+  display: inline-block;
+  margin-bottom: 40px;
+  padding-left: 30px;
+}
+
+.footer-list a {
+  color: grey;
 }
