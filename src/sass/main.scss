@@ -53,6 +53,11 @@ i.fa {
 
 .devs {
   margin: 15px;
+  margin-bottom: 50px;
+}
+
+.notification {
+  margin-bottom: 50px;
 }
 
 .main-container {
@@ -62,8 +67,8 @@ i.fa {
 .mouse-over {
   position: absolute;
   z-index: 2;
-  margin-top: 205px;
-  margin-left: 265px;
+  margin-top: 150px;
+  margin-left: 198px;
   visibility: hidden;
  }
 
@@ -79,6 +84,10 @@ i.fa.fa-heart-o {
 .add-pic {
   padding-left: 400px;
   height: 400px;
+}
+
+.add-pic {
+  margin: 5px;
 }
 
 .main-content {
