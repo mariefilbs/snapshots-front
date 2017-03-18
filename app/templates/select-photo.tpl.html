@@ -5,9 +5,14 @@
       <img ng-src="{{ photo.photo_url }}">
     </p>
   <footer class="modal-card-foot">
-      <a class="button is-primary" ng-click="addComment()">Add</a>
+    <div class="comments">
+     <p>Hello World</p>
+
+     <p ng-repeat="comment in comments">{{ comment.User.username}}: {{ comment.text }}</p>
+    <div>
+      <a class="button is-primary" ng-click="addComment(data.comment)">Add</a>
       <a class="button" ng-click="deactivate()">Cancel</a>
-      <input type="text" placeholder="Add comment..."/>
+      <input type="text" placeholder="Add comment..." ng-model="data.comment"/>
     </footer>
   <button class="modal-close" ng-click="deactivate()"></button>
  </div>
