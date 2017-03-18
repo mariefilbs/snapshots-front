@@ -1,13 +1,14 @@
 <div class="modal is-active">
-  <div class="modal-background"></div>
+ <div class="modal-background"></div>
   <div class="modal-content">
     <p class="image is-4by3">
       <img ng-src="{{ photo.photo_url }}">
     </p>
-  </div>
-  <!-- <footer class="modal-card-foot">
-      <a class="button is-success" ng-click="addComment()">Add</a>
-      <a class="button" ng-click="..">Cancel</a>
-    </footer> -->
+  <footer class="modal-card-foot">
+      <a class="button is-primary" ng-click="addComment()">Add</a>
+      <a class="button" ng-click="deactivate()">Cancel</a>
+      <input type="text" placeholder="Add comment..."/>
+    </footer>
   <button class="modal-close" ng-click="deactivate()"></button>
+ </div>
 </div>
