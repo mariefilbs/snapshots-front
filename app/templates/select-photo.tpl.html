@@ -4,9 +4,9 @@
     <p class="image is-4by3">
       <img ng-src="{{ photo.photo_url }}">
     </p>
-  <footer class="modal-card-foot">
+  <footer class="modal-card-foot" ng-hide="!loggedIn">
     <!-- <div class="photo-posted-by">{{ photo.user.username}}</div> -->
-    <div class="comments" ng-hide="!loggedIn">
+    <div class="comments">
      <p ng-repeat="comment in comments"><span class="username-in-modal">{{ comment.User.username}}</span>: {{ comment.text }}</p>
      <p>{{ liveComment.text }}</p>
    </div>
