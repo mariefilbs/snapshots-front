@@ -9,7 +9,7 @@ function UserController ($scope, $http, SERVER, $cookies, $state, $rootScope) {
 
   $scope.register = (user) => {
     $http.post(`${SERVER}/users`, user).then(resp => {
-      var message = `Thanks for joing us, : ${resp.data.username}!`;
+      var message = `Thanks for joining us,  ${resp.data.username}!`;
       $scope.notifications.push(message);
     }).catch(error => {
       console.log(error);
