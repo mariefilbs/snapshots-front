@@ -5,7 +5,6 @@
 
         <div class="mouse-over">
             <span><i class="fa fa-heart-o" aria-hidden="true" ng-click="toggleLike(photo)" ng-class="{'activeIcon': photo.liked}"></i></span>
-            <!-- <span><img class="heart" src="/images/heart.png" ng-click="activateHeart()" ng-class="{'activeIcon': isActive}"><span> -->
           </div>
 
         <a href="/#!/home/photos/{{ photo.id }}">
@@ -16,14 +15,9 @@
         </div>
         <div class="media">
          <div class="media-content">
-          <p class="title is-5">{{ photo.title }}</p>
+          <p class="title is-6 pic-title">{{ photo.title }}</p>
          </div>
         </div>
-       <div class="content">
-        <!---where comments will go--->
-        <br>
-        <small>{{ user.username }}</small>
-       </div>
        </a>
       </div>
     </div>

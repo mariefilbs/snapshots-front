@@ -6,7 +6,7 @@
     </p>
   <footer class="modal-card-foot">
     <!-- <div class="photo-posted-by">{{ photo.user.username}}</div> -->
-    <div class="comments">
+    <div class="comments" ng-hide="!loggedIn">
      <p ng-repeat="comment in comments">{{ comment.User.username}}: {{ comment.text }}</p>
      <p>{{ liveComment.text }}</p>
     <div>

@@ -9,6 +9,7 @@ function SelectPhotoController ($scope, $http, $state, $stateParams, SERVER) {
       $scope.photo = resp.data;
       $scope.comments = resp.data.Comments;
 
+
       console.log($scope.comments);
     });
   }
@@ -25,7 +26,7 @@ function SelectPhotoController ($scope, $http, $state, $stateParams, SERVER) {
   }
   $scope.deactivate = function () {
     $state.go('root.home');
-  }
+  };
 
 }
 

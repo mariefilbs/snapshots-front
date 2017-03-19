@@ -39,6 +39,10 @@ i.fa {
   margin: 5px;
 }
 
+.add-pic input {
+  margin: 5px;
+}
+
 
 .create-button {
   margin-left: 12px;
@@ -55,6 +59,15 @@ i.fa {
   margin-bottom: 50px;
 }
 
+.pic-title {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.media-content {
+  height: 30px;
+}
+
 .notification {
   margin-bottom: 50px;
 }
@@ -66,7 +79,7 @@ i.fa {
 .mouse-over {
   position: absolute;
   z-index: 2;
-  margin-top: 150px;
+  margin-top: 153px;
   margin-left: 198px;
   visibility: hidden;
  }
@@ -94,7 +107,10 @@ i.fa.fa-heart-o {
 }
 
 footer {
-  height: 220px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer-list li {
@@ -105,4 +121,9 @@ footer {
 
 .footer-list a {
   color: grey;
+}
+
+footer p {
+  align-self: baseline;
+
 }
