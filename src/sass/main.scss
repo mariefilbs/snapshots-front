@@ -106,7 +106,20 @@ i.fa.fa-heart-o {
   flex: 1;
 }
 
-footer {
+.modal-card-foot {
+  display: flex;
+  align-content: flex-end;
+}
+
+.modal-card-foot input {
+  height: 35px;
+}
+
+span.username-in-modal {
+  font-weight: bold;
+}
+
+footer.footer {
   height: 165px;
   display: flex;
   flex-direction: column;
