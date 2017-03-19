@@ -19,6 +19,10 @@ nav {
   //font-family: 'Lobster', cursive;
 }
 
+.tagline {
+  font-size: 60%;
+}
+
 i.fa {
   padding-top: 20px;
 }
@@ -107,12 +111,31 @@ i.fa.fa-heart-o {
 }
 
 .modal-card-foot {
+  min-height: 120px;
   display: flex;
   align-content: flex-end;
+
 }
 
-.modal-card-foot input {
-  height: 35px;
+.comments {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  //border: 1px solid lightgrey;
+  // justify-content: flex-start;
+}
+
+.comment-box {
+  position: absolute;
+  margin-left: 410px;
+  margin-top: 10px;
+
+  input {
+    height: 35px;
+    margin: 7px;
+    margin-right: 4px;
+    margin-left: 0px;
+  }
 }
 
 span.username-in-modal {

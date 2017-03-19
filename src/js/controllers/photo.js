@@ -15,12 +15,14 @@ function PhotoController ($scope, $http, $state, SERVER) {
       $state.go('root.home');
     });
   };
-  // $scope.activateHeart = function() {
-  //   $scope.isActive = !$scope.isActive;
-  // }
   $scope.toggleLike = (photo) => {
     photo.liked = !photo.liked;
   }
+  //to use below, add a likecount() to ng-glass on heart in modal
+  // $scope.likeCount = () => {
+  //   $scope.data = 0;
+  //   $scope.data++;
+  // }
 }
 
 PhotoController.$inject = ['$scope', '$http', '$state', 'SERVER'];
