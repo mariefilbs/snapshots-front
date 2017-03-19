@@ -15,8 +15,11 @@ function PhotoController ($scope, $http, $state, SERVER) {
       $state.go('root.home');
     });
   };
-  $scope.activateHeart = function() {
-    $scope.isActive = !$scope.isActive;
+  // $scope.activateHeart = function() {
+  //   $scope.isActive = !$scope.isActive;
+  // }
+  $scope.toggleLike = (photo) => {
+    photo.liked = !photo.liked;
   }
 }
 

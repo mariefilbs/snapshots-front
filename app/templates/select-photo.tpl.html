@@ -5,10 +5,10 @@
       <img ng-src="{{ photo.photo_url }}">
     </p>
   <footer class="modal-card-foot">
+    <!-- <div class="photo-posted-by">{{ photo.user.username}}</div> -->
     <div class="comments">
-     <p>Hello World</p>
-
      <p ng-repeat="comment in comments">{{ comment.User.username}}: {{ comment.text }}</p>
+     <p>{{ liveComment.text }}</p>
     <div>
       <a class="button is-primary" ng-click="addComment(data.comment)">Add</a>
       <a class="button" ng-click="deactivate()">Cancel</a>

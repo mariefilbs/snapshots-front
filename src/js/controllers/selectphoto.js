@@ -20,8 +20,8 @@ function SelectPhotoController ($scope, $http, $state, $stateParams, SERVER) {
     var comment = {comment: data};
     $http.post(`${SERVER}/photos/${id}/comment`, comment).then(resp => {
       $scope.comment = resp.data;
-      //console.log(resp.data);
-    })
+      $scope.liveComment = resp.data;
+    }).then($state.reload());
   }
   $scope.deactivate = function () {
     $state.go('root.home');
