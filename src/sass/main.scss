@@ -107,7 +107,7 @@ i.fa.fa-heart-o {
 }
 
 footer {
-  height: 200px;
+  height: 165px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,8 +115,9 @@ footer {
 
 .footer-list li {
   display: inline-block;
-  margin-bottom: 40px;
-  padding-left: 30px;
+  margin-top: 35px;
+  padding-left: 40px;
+  font-size: 110%;
 }
 
 .footer-list a {
@@ -124,6 +125,10 @@ footer {
 }
 
 footer p {
+  font-size: 85%;
   align-self: baseline;
+}
 
+.copyright {
+  margin-top: -10px;
 }
